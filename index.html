@@ -417,12 +417,7 @@
          ============================================ -->
     <footer>
       <div class="footer-content">
-        <p>&copy; <span id="year"></span> Haoli Bai · <a href="#" id="top-link">Back to top ↑</a></p>
-      </div>
-      <div class="visitor-map">
-        <div id="clustrmaps-widget">
-          <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=nQLu84viePq1dfXIYnjoGiQxqm-r7hYJeX8f_Oug7fo&cl=ffffff&w=a"></script>
-        </div>
+        <p>&copy; <span id="year"></span> Haoli Bai · <a href="#" id="top-link">Back to top ↑</a> · <span class="visitor-count">Visits: <span id="visitor-count">--</span></span></p>
       </div>
     </footer>
 
@@ -431,9 +426,21 @@
   <!-- ============================================
        JavaScript
        ============================================ -->
+  <script data-goatcounter="https://haolibai.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.js"></script>
   <script>
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Display total visits from GoatCounter
+    fetch('https://haolibai.goatcounter.com/counter/TOTAL.json')
+      .then(response => response.ok ? response.json() : Promise.reject(response))
+      .then(data => {
+        document.getElementById('visitor-count').textContent = data.count;
+      })
+      .catch(() => {
+        document.getElementById('visitor-count').textContent = 'unavailable';
+      });
 
     // Smooth scroll for navigation
     document.querySelectorAll('nav a, #top-link').forEach(link => {

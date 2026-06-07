@@ -391,10 +391,10 @@ footer {
   text-align: center;
 }
 
-.footer-content { font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 1.5rem; }
+.footer-content { font-size: 0.9rem; color: var(--color-text-secondary); }
 .footer-content a { color: var(--color-accent); text-decoration: none; }
 .footer-content a:hover { text-decoration: underline; }
-.visitor-map { max-width: 300px; margin: 0 auto; }
+.visitor-count { white-space: nowrap; }
 
 /* Animation */
 @keyframes fadeInUp {
@@ -471,7 +471,6 @@ footer {
   
   footer { margin-top: 2.5rem; padding: 1.5rem 0; }
   .footer-content { font-size: 0.85rem; }
-  .visitor-map { max-width: 250px; }
 }
 
 /* Small Mobile */
