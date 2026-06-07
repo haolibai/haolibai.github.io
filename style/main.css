@@ -394,7 +394,6 @@ footer {
 .footer-content { font-size: 0.9rem; color: var(--color-text-secondary); }
 .footer-content a { color: var(--color-accent); text-decoration: none; }
 .footer-content a:hover { text-decoration: underline; }
-.visitor-count { white-space: nowrap; }
 
 /* Animation */
 @keyframes fadeInUp {

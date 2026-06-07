@@ -417,7 +417,7 @@
          ============================================ -->
     <footer>
       <div class="footer-content">
-        <p>&copy; <span id="year"></span> Haoli Bai · <a href="#" id="top-link">Back to top ↑</a> · <span class="visitor-count">Visits: <span id="visitor-count">--</span></span></p>
+        <p>&copy; <span id="year"></span> Haoli Bai · <a href="#" id="top-link">Back to top ↑</a></p>
       </div>
     </footer>
 
@@ -431,16 +431,6 @@
   <script>
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Display total visits from GoatCounter
-    fetch('https://haolibai.goatcounter.com/counter/TOTAL.json')
-      .then(response => response.ok ? response.json() : Promise.reject(response))
-      .then(data => {
-        document.getElementById('visitor-count').textContent = data.count;
-      })
-      .catch(() => {
-        document.getElementById('visitor-count').textContent = 'unavailable';
-      });
 
     // Smooth scroll for navigation
     document.querySelectorAll('nav a, #top-link').forEach(link => {
