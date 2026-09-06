@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/main.css?v=20260906-4">
 </head>
 <body>
   <div class="container">
@@ -86,20 +86,20 @@
         <h2>News</h2>
         <ul class="news-list">
           <li class="news-item">
+            <span class="news-date">2026-8</span>
+            <span class="news-content">🔥 We are happy to announce <a href="https://www.legox.net/blog/lego-rl/">Lego-RL</a>, an open-source framework for harness-native reinforcement learning of coding agents. All code, data, and models are available on <a href="https://github.com/LegoX/Lego-RL" class="news-icon-link" title="GitHub"><img src="img/github_s.jpg" alt="">GitHub</a> and <a href="https://huggingface.co/collections/Lego-X/lego-rl" class="news-icon-link" title="Hugging Face"><span class="hf-logo" aria-hidden="true">🤗</span>Hugging Face</a>.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">2026-8</span>
+            <span class="news-content">🔥 We establish <a href="https://www.legox.net/" class="legox-collection-link" title="LegoX"><img src="img/legox-logo.svg" alt="">LegoX</a>, an open-source collection spanning agentic data pipelines, training frameworks, evaluation benchmarks, and foundation models to advance frontier agentic intelligence. See our work on <a href="https://github.com/LegoX" class="news-icon-link" title="GitHub"><img src="img/github_s.jpg" alt="">GitHub</a> and <a href="https://huggingface.co/Lego-X" class="news-icon-link" title="Hugging Face"><span class="hf-logo" aria-hidden="true">🤗</span>Hugging Face</a>.</span>
+          </li>
+          <li class="news-item">
             <span class="news-date">2026-1</span>
-            <span class="news-content">🔥 We present <a href="https://arxiv.org/abs/2601.01426"> SWE-Lego </a>, the state-of-the-art supervised fine-tuning method for software issue resolving. All code, data, models are now opensourced. <a href="https://swe-lego.github.io/"> Project website</a>.</span>
+            <span class="news-content">We present <a href="https://arxiv.org/abs/2601.01426"> SWE-Lego </a>, the state-of-the-art supervised fine-tuning method for software issue resolving. All code, data, models are now opensourced. <a href="https://swe-lego.github.io/"> Project website</a>.</span>
           </li>
           <li class="news-item">
             <span class="news-date">2025-11</span>
             <span class="news-content">We will present the tutorial "Efficient Inference for Large Language Models – Algorithm, Model, and System" at EMNLP 2025. <a href="https://haolibai.github.io/emnlp-2025-tutorial-efficiency/">Tutorial website.</a></span>
-          </li>
-          <li class="news-item">
-            <span class="news-date">2025-11</span>
-            <span class="news-content">I will give a talk on "Quantization and Pruning of Large Language Models: Challenges, Techniques and Opportunities" at <a href="http://lmg.cipsc.org.cn/conference/lmg2025/subForum/subForum4/index.html">LMG 2025</a>.</span>
-          </li>
-          <li class="news-item">
-            <span class="news-date">2025-9</span>
-            <span class="news-content">Our paper <a href="https://arxiv.org/abs/2505.24680">"A Simple Linear Patch Revives Layer-Pruned Large Language Models"</a> is accepted by NeurIPS 2025.</span>
           </li>
           <!-- <li class="news-item">
             <span class="news-date">2025-7</span>
@@ -116,6 +116,39 @@
       <section id="publications">
         <h2>Selected Publications</h2>
         <p class="pub-note">*: Equal contribution; #: Corresponding author; +: Project lead</p>
+
+        <div class="publication">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2608.17393">LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents</a>
+          </div>
+          <div class="pub-authors">Yiming Du, Yuxin Jiang, Tao Yuan, Jianbo Dai, Shaowei Wang, Jierun Chen, Chaofan Tao, Xianzhi Yu, Lifeng Shang, Kam-Fai Wong, Xiaohui Li, <strong>Haoli Bai</strong><sup>#</sup></div>
+          <div class="pub-venue">arXiv Preprint 2608.17393.</div>
+          <div class="pub-links">
+            <a href="https://lego-rl.pages.dev/">Homepage</a> <a href="https://github.com/LegoX/Lego-RL">Code</a> <a href="https://huggingface.co/collections/Lego-X/lego-rl">Data & Models</a>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2607.06065">SWE-Review: Closing the Loop on Issue Resolution with Agentic Code Review</a>
+          </div>
+          <div class="pub-authors">Ruoyu Wang, Jierun Chen, Shaowei Wang, Chaofan Tao, Sidi Yang, Yuxin Jiang, Kim-Hui Yap, Lifeng Shang, Xiaohui Li, <strong>Haoli Bai</strong><sup>#</sup></div>
+          <div class="pub-venue">arXiv Preprint 2607.06065.</div>
+          <div class="pub-links">
+            <a href="https://swe-lego.github.io/SWE-Review/">Homepage</a> <a href="https://github.com/LegoX/SWE-Review">Code</a> <a href="https://huggingface.co/collections/Lego-X/swe-review">Data & Models</a>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2606.03461">What Makes Interaction Trajectories Effective for Training Terminal Agents?</a>
+          </div>
+          <div class="pub-authors">Sidi Yang, Chaofan Tao, Jierun Chen, Tiezheng Yu, Ruoyu Wang, Yuxin Jiang, Yiming Du, Wendong Xu, Jing Xiong, Taiqiang Wu, Lifeng Shang, Xiaohui Li, Ngai Wong, <strong>Haoli Bai</strong><sup>#</sup></div>
+          <div class="pub-venue">arXiv Preprint 2606.03461.</div>
+          <div class="pub-links">
+            <a href="https://stephen0808.github.io/terminal-lego.github.io/">Homepage</a> <a href="https://github.com/LegoX/terminal-lego">Code</a> <a href="https://huggingface.co/collections/Lego-X/terminal-lego">Data & Models</a>
+          </div>
+        </div>
 
         <div class="publication">
           <div class="pub-title">
@@ -307,6 +340,66 @@
       <!-- Projects Section -->
       <section id="projects">
         <h2>Projects</h2>
+        <div class="project">
+          <div class="project-header">
+            <span class="project-title"><img src="img/legox-logo.svg" alt="" class="project-title-logo">LegoX: Open-Source Collection for Frontier Agentic Intelligence</span>
+            <div class="project-links">
+              <a href="https://www.legox.net/">Homepage</a>
+              <a href="https://github.com/LegoX">Github</a>
+              <a href="https://huggingface.co/Lego-X">Huggingface</a>
+            </div>
+          </div>
+          <p class="project-desc">LegoX is an open-source collection spanning agentic data pipelines, training frameworks, evaluation benchmarks, and foundation models to advance frontier agentic intelligence.</p>
+          <details class="legox-projects">
+            <summary>LegoX Projects</summary>
+            <div class="legox-subproject-list">
+              <div class="legox-subproject">
+                <div class="legox-subproject-header">
+                  <span class="legox-subproject-title">Lego-RL</span>
+                  <span class="legox-subproject-links">
+                    <a href="https://lego-rl.pages.dev/">Homepage</a>
+                    <a href="https://github.com/LegoX/Lego-RL">Code</a>
+                    <a href="https://huggingface.co/collections/Lego-X/lego-rl">Data & Models</a>
+                  </span>
+                </div>
+                <p>Lego-RL trains coding agents with online reinforcement learning inside native harnesses and real repository environments.</p>
+              </div>
+              <div class="legox-subproject">
+                <div class="legox-subproject-header">
+                  <span class="legox-subproject-title">SWE-Review</span>
+                  <span class="legox-subproject-links">
+                    <a href="https://swe-lego.github.io/SWE-Review/">Homepage</a>
+                    <a href="https://github.com/LegoX/SWE-Review">Code</a>
+                    <a href="https://huggingface.co/collections/Lego-X/swe-review">Data & Models</a>
+                  </span>
+                </div>
+                <p>SWE-Review closes the loop on issue resolution with agentic code review, helping agents inspect, critique, and improve generated patches.</p>
+              </div>
+              <div class="legox-subproject">
+                <div class="legox-subproject-header">
+                  <span class="legox-subproject-title">Terminal-Lego</span>
+                  <span class="legox-subproject-links">
+                    <a href="https://stephen0808.github.io/terminal-lego.github.io/">Homepage</a>
+                    <a href="https://github.com/LegoX/terminal-lego">Code</a>
+                    <a href="https://huggingface.co/collections/Lego-X/terminal-lego">Data & Models</a>
+                  </span>
+                </div>
+                <p>Terminal-Lego studies what makes interaction trajectories effective for training terminal agents across realistic command-line tasks.</p>
+              </div>
+              <div class="legox-subproject">
+                <div class="legox-subproject-header">
+                  <span class="legox-subproject-title">SWE-Lego</span>
+                  <span class="legox-subproject-links">
+                    <a href="https://swe-lego.github.io/">Homepage</a>
+                    <a href="https://github.com/SWE-Lego/SWE-Lego">Code</a>
+                    <a href="https://huggingface.co/SWE-Lego">Data & Models</a>
+                  </span>
+                </div>
+                <p>SWE-Lego is a supervised fine-tuning framework for software issue resolving, built with open data, models, and reproducible training recipes.</p>
+              </div>
+            </div>
+          </details>
+        </div>
         <div class="project">
           <div class="project-header">
             <span class="project-title">PocketFlow: An Automated Framework for Compressing and Accelerating DNNs</span>
