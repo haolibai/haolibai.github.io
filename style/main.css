@@ -490,9 +490,10 @@ footer {
 .footer-content a { color: var(--color-accent); text-decoration: none; }
 .footer-content a:hover { text-decoration: underline; }
 
-.visitor-globe {
-  width: 160px;
-  min-height: 175px;
+.visitor-map {
+  width: 280px;
+  max-width: 100%;
+  min-height: 190px;
   margin: 4rem auto 0;
 }
 
