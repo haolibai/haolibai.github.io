@@ -490,6 +490,12 @@ footer {
 .footer-content a { color: var(--color-accent); text-decoration: none; }
 .footer-content a:hover { text-decoration: underline; }
 
+.visitor-globe {
+  width: 160px;
+  min-height: 175px;
+  margin: 4rem auto 0;
+}
+
 /* Animation */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
